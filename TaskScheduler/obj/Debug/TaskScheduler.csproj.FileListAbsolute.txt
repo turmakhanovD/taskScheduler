@@ -1,0 +1,15 @@
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\bin\Debug\TaskScheduler.exe.config
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\bin\Debug\TaskScheduler.exe
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\bin\Debug\TaskScheduler.pdb
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.csprojAssemblyReference.cache
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\MainWindow.g.cs
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\App.g.cs
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler_MarkupCompile.cache
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler_MarkupCompile.lref
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\MainWindow.baml
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.g.resources
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.Properties.Resources.resources
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.csproj.GenerateResource.cache
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.csproj.CoreCompileInputs.cache
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.exe
+C:\Users\ТурмаханД\source\repos\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.pdb
