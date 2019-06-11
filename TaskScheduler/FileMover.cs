@@ -4,9 +4,10 @@ namespace TaskScheduler
 {
     public class FileMover
     {
-        private void MoveFile(string from, string to)
+        public void MoveFile(object paths)
         {
-            File.Move(from, to);
+            Pathes pathes = paths as Pathes;
+            File.Move(pathes.From, pathes.To);
         }
     }
 }

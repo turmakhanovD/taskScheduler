@@ -5,8 +5,9 @@ namespace TaskScheduler
 {
     public class FileDownloader
     {
-        private void Download(string uri)
+        public void Download(object url)
         {
+            string uri = url as string;
             Uri address = new Uri(uri);
             WebClient webClient = new WebClient();
             webClient.DownloadFileAsync(address, "dowload.exe");

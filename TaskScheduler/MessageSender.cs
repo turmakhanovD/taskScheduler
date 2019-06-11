@@ -18,12 +18,13 @@ namespace TaskScheduler
             Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
         };
 
-        public void SendMessage(string subject, string message, string toAddress)
+        public void SendMessage(object obj)
         {
-            using (var newMessage = new MailMessage(fromAddress.ToString(), toAddress )
+            MessageAttributes message = obj as MessageAttributes;
+            using (var newMessage = new MailMessage(fromAddress.ToString(), message.To )
             {
-                Subject = subject,
-                Body = message
+                Subject = message.Subject,
+                Body = message.Message
             })
             {
                 smtp.Send(newMessage);

@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaskScheduler"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" StateChanged="HideToTray" Closing="HideToTrayInsteadClosing">
+        Title="Scheduler" Height="450" Width="800" StateChanged="HideToTray" Closing="HideToTrayInsteadClosing">
     <Grid>
-        
+        <TextBox Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <ComboBox Name="periodicityComboBox" Margin="423,11,10,0" VerticalAlignment="Top" SelectionChanged="periodicityChanged"/>
+        <Grid Visibility="Collapsed" Name="onceAWeek" HorizontalAlignment="Left" Height="50" Margin="10,38,0,0" VerticalAlignment="Top" Width="772">
+            <ComboBox  Name="dayOfWeek" HorizontalAlignment="Left" Margin="169,10,0,0" VerticalAlignment="Top" Width="358"/>
+            <TextBlock  HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Выберите день недели" VerticalAlignment="Top" Height="22" Width="141"/>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="onceAMonth" HorizontalAlignment="Left" Height="50" Margin="10,38,0,0" VerticalAlignment="Top" Width="772">
+            <TextBlock  HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Выберите день" VerticalAlignment="Top" Height="22" Width="141"/>
+            <DatePicker Name="datePicker" HorizontalAlignment="Left" Margin="199,8,0,0" VerticalAlignment="Top" SelectedDateChanged="datePickerSelectedDateChanged"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="21,109,0,0" TextWrapping="Wrap" Text="Выберите тип задачи:" VerticalAlignment="Top" Height="19" Width="141"/>
+        <ComboBox Name="typeComboBox" HorizontalAlignment="Left" Margin="167,106,0,0" VerticalAlignment="Top" Width="272" SelectionChanged="typeComboBoxSelectionChanged">
+            <ComboBoxItem Content="Отправка Email"/>
+            <ComboBoxItem Content="Перемещение файла"/>
+            <ComboBoxItem Content="Скачивание файла с интернета"/>
+        </ComboBox>
+        <TextBlock x:Name="actionDescription" HorizontalAlignment="Left" Margin="20,178,0,0" TextWrapping="Wrap" Text="desc" VerticalAlignment="Top" Width="97" FontFamily="Comic Sans MS" Visibility="Collapsed"/>
+        <TextBox x:Name="actionTextBox" HorizontalAlignment="Left" Height="23" Margin="117,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Visibility="Collapsed"/>
+        <TextBlock x:Name="actionDescriptionReplace" HorizontalAlignment="Left" Margin="20,214,0,0" TextWrapping="Wrap" Text="desc" VerticalAlignment="Top" Width="97" FontFamily="Comic Sans MS" Visibility="Collapsed"/>
+        <TextBox x:Name="actionTextBoxReplace" HorizontalAlignment="Left" Height="23" Margin="117,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Visibility="Collapsed"/>
+        <Button x:Name="directoryChoose1" Content="Обзор" HorizontalAlignment="Left" Margin="383,219,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.52,0.562" Visibility="Collapsed" Height="23" Click="directoryChoose1Click"/>
+        <Button x:Name="directoryChoose" Content="Обзор" HorizontalAlignment="Left" Margin="383,183,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.52,0.562" Visibility="Collapsed" Height="23" Click="directoryChooseClick"/>
+        <Button Content="Сделать" HorizontalAlignment="Left" Margin="56,368,0,0" VerticalAlignment="Top" Width="75" Click="CreateNewTask"/>
+
+
+
+
     </Grid>
 </Window>
